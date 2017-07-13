@@ -4,9 +4,9 @@
  * @
  * @	修正日			修正者		修正内容
  * @ 	---------		---------		-------------------------------
- * @ 	2016.10.04		李多浩		最初作成
+ * @ 	2016.10.04		内山　佳美		最初作成
  * 
- * @author 李　多　浩
+ * @author 内山　佳美
  * @since 2017.07.12
  * @version 0.1
  *
@@ -23,18 +23,21 @@
 <body>
 
 <div align="right">
-            ようこそ ○○○ さん
+            ようこそ ゲスト 様
         </div>
-<button type="submit" name="login">ログイン</button>
+        <div align="right">
+         <button type="submit" name="login">ログイン</button>
+        </div>
 
-<h2>更新情報・お知らせ</h2>
+<br>
+<font size="4">更新情報・お知らせ</font>
 <hr/>
 <div>
 		<table style="border:1px solid;">
 			<tr>
-				<th>No</th>
-				<th>Title</th>
-				<th>登録日</th>
+			<th width="30" height="50">No</th>
+			<th width="30" height="50">Title</th>
+			<th >登録日</th>
 			</tr>
 			<tr>
 				<td>1</td>

@@ -18,17 +18,16 @@
 <%@ page session="false" %>
 <html>
 <head>
-	<title>Home</title>
+	<title>Detail</title>
 </head>
 <body>
-<div class="heading">
+<div >
 <h3>臨時休業のお知らせ</h3>
 </div>
 <hr/>
-<div class="news__detail__wrapper">
+<div >
 
 お客様にはご迷惑をおかけしておりますことをお詫びいたします。</div>
-
 <button type="submit" name="login">←</button>
 <button type="submit" name="login">ホームに戻る</button>
 <button type="submit" name="login">→</button>
