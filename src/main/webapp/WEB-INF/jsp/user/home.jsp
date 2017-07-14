@@ -24,6 +24,7 @@
 <title>Home</title>
 </head>
 <body>
+<<<<<<< HEAD
 	<form action="/login" method=GET>
 		<div align="right">ようこそ ゲスト様</div>
 		<div align="right">
@@ -46,6 +47,12 @@
 			</table>
 		</div>
 	</form>
-</body>
+=======
+<div align="right">
+            ようこそ ○○○ さん
+<input type="button" name="login" value="ログイン">
+</div>
 
+>>>>>>> 2d3f1391c99286b5475ec27e480a6edf6c078f86
+</body>
 </html>
