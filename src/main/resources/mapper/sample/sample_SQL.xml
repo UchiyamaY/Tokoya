@@ -6,5 +6,12 @@
     <select id="getUserList" resultType="SampleVO">
         SELECT * FROM MSTUSER
     </select>
+    
+    <select id="getNoticeList" resultType="NoticeVO">
+        SELECT NOTICEID, NOTICETITLE, NOTICEBODY, NOTICEBODY, REGISTERDATE FROM MSTNOTICE ORDER BY NOTICEBODY
+    </select>
+    
+  
+    
 
 </mapper>

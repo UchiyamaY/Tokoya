@@ -23,14 +23,24 @@
 <body>
 <div >
 <h3>臨時休業のお知らせ</h3>
+<ul>
+    <c:forEach var="item" items="${result1}">
+        <li>${item.noticeId} ${item.noticeTitle}</li>
+    </c:forEach>
+    </ul>
 </div>
 <hr/>
-<div >
+<div >お客様にはご迷惑をおかけしておりますことをお詫びいたします。</div>
+<div align="right">2017/07/12</div>
 
-お客様にはご迷惑をおかけしておりますことをお詫びいたします。</div>
 <button type="submit" name="login">←</button>
 <button type="submit" name="login">ホームに戻る</button>
 <button type="submit" name="login">→</button>
+    <ul>
+    <c:forEach var="item" items="${result1}">
+        <li>${item.noticeId} ${item.noticeTitle}</li>
+    </c:forEach>
+    </ul>
 </body>
 
 </html>

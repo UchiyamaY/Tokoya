@@ -23,5 +23,10 @@
         <li>${item.userId}</li>
     </c:forEach>
     </ul>
+    <ul>
+    <c:forEach var="item" items="${result1}">
+        <li>${item.noticeId} ${item.noticeTitle}</li>
+    </c:forEach>
+    </ul>
 </body>
 </html>

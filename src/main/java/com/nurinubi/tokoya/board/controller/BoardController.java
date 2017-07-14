@@ -3,17 +3,16 @@ package com.nurinubi.tokoya.board.controller;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
-import java.util.Map;
-
-import javax.annotation.Resource;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+
+import com.nurinubi.tokoya.board.repository.BoardRepository;
 
 /**
 * @Class Name : BoardController.java.java
@@ -31,8 +30,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 *  Copyright (C) by NuriNubi All right reserved.
 */
 
+
 @Controller
 public class BoardController {
+	
+	@Autowired
+	private BoardRepository boardRepository;
+
 	private static final Logger logger = LoggerFactory.getLogger(BoardController.class);
 
 	//お知らせのホーム画面
@@ -56,9 +60,13 @@ public class BoardController {
 		return "/board/write";
 	}
 	
+	
 	@RequestMapping(value = "/board/view", method = RequestMethod.GET)
-	public String boardView(Locale locale, Model model) {
+	public String board(Model model) {
+		logger.info("BoardController");
 		
+        model.addAttribute("Detail", boardRepository.getNoticeDetail());
+		System.out.println(model);
 		return "/board/view";
 	}
 }

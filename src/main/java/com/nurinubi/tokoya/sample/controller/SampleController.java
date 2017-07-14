@@ -24,6 +24,7 @@ public class SampleController {
 		logger.info("SampleController");
 		
         model.addAttribute("result", sampleRepository.getUserList());
+        model.addAttribute("result1", sampleRepository.getNoticeList());
 		System.out.println(model);
 		return "sample/home";
 	}

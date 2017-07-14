@@ -57,9 +57,50 @@ public class UserController {
 	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String login() {
+		
+		//表示するページ設定
+		return "/user/login";
+	}
+	
+	/*@RequestMapping(value = "/home", method = RequestMethod.GET, params = "homelogin")
+	public String loginhome() {
 		logger.info("Welcome home! The client locale is {}.");
 		
 		//表示するページ設定
 		return "user/login";
+	}*/
+	
+	/*@RequestMapping(value = "/homelogin", method = RequestMethod.GET)
+	public String homesingin() {
+		logger.info("Welcome home! The client locale is {}.");
+		
+		//表示するページ設定
+		return "user/homelogin";
 	}
+	
+	
+	@RequestMapping(value = "/homelogin", method = RequestMethod.GET, params = "Reservation")
+	public String Reservation() {
+		logger.info("Welcome home! The client locale is {}.");
+		
+		//表示するページ設定
+		return "/admin/admin";
+	}
+	@RequestMapping(value = "/homelogin", method = RequestMethod.GET, params = "Reservationlist")
+	public String Reservationlist() {
+		logger.info("Welcome home! The client locale is {}.");
+		
+		//表示するページ設定
+		return "/reservation/history";
+	}
+	
+	@RequestMapping(value = "/homelogin", method = RequestMethod.GET, params = "homelogout")
+	public String homelogout() {
+		logger.info("Welcome home! The client locale is {}.");
+		
+		//表示するページ設定
+		return "/user/home";
+	}*/
 }
+
+
